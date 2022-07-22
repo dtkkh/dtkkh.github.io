@@ -6,22 +6,33 @@
 	  background-color: #111111;
       }
       
-      video {
+      video {	  
 	  display: block;
 	  margin: auto;
 	  transform: translate(-50%, -50%);
 	  position: absolute;
 	  top: 50%;
 	  left: 50%;
-	  width: 100%;
+	  height: 100vh;
+	  width: 100vw;
       }
     </style>
   </head>
   
   <body>
-    <video autoplay muted playsinline class="video-background full-height">
+    <video autoplay muted playsinline preload="none" class="video-background">
       <source src="t.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </body>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CDK62GMEHP');
+  </script>
 </html>
